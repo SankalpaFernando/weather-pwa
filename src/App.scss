@@ -1,0 +1,83 @@
+.App{
+  .location{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: fit-content;
+    margin: 20% auto 5% auto;
+    &>.fas{
+      margin-top: .6rem !important;
+      font-size:1.2rem;
+      color: rgb(65, 65, 65);
+    }
+    &>p{
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgb(65, 65, 65);
+      text-align: center;
+    }
+  }
+  &>.date{
+    &>p{
+      text-align: center;
+      color: rgb(117, 117, 117);
+    }
+  }
+  &>.weather-card{
+    width: 90%;
+    margin: 1rem auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    &>.info{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      &>.tempreature{
+        font-size: 4rem;
+        color: rgb(65, 65, 65);
+        &>sup{
+          font-size: 3rem;
+        }
+      }
+      &>.icon{
+        font-size: 4rem;
+        margin-top: 1rem;
+        color: rgb(65, 65, 65);
+      }
+    }
+    &>.description{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 1rem;
+      font-size: .8rem;
+      &>.real{
+        text-align: left;
+      }
+      &>.type{
+        text-align: right;
+      }
+    }
+  }
+  &>.data-table{
+    margin-top: 2rem;
+    &>table{
+      width: 70%;
+      margin: 1rem auto;
+     &>tr{
+      &>.type{
+        text-align: left;
+      }
+      &>.value{
+        text-align: right;
+      }
+     }
+    }
+  }
+}
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: solid white 1.5rem;
+}
